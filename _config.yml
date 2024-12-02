@@ -12,7 +12,7 @@ title                    : "Zeqing Wang / Personal Page"
 title_separator          : "-"
 name                     : &name "Zeqing Wang"
 description              : &description "personal description"
-url                      : "https://Zing110.github.io"
+url                      : "https://zing110.github.io/"
 baseurl                  : #"" # the subpath of your site, e.g. "/blog"
 repository               : "Zing110/zing.github.io"
 
