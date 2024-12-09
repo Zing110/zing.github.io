@@ -86,4 +86,4 @@ Multi-Agent Search is a powerful tool for solving complex problems that involve 
 
 The doc for how the requirement of the implementation is [Project explination](../assets/code/VE492/p3/p3.pdf).
 
-The code files can be found [here](https://github.com/Zing110/VE492/tree/main/p3/p3)
+The code files can be found [here](https://github.com/Zing110/VE492/tree/main/p3/P3)
