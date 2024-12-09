@@ -1,20 +1,13 @@
 ---
-title: "Teaching experience 1"
+title: "Algorithm Survey"
 collection: projects
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+type: "Undergraduate project"
+permalink: /projects/Algorithm_Survey_VE477
 venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+date: 2024-12-01
+location: "Shanghai, China"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+This is a project that write a survey for some common algorithms. Click the link to see what have been done.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+[Algorithm Survey for VE477](../assets/Algorithm_Survey_VE477.pdf).
