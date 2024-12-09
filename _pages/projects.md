@@ -12,7 +12,7 @@ redirect_from:
 Projects List
 ======
   <ul>{% for post in site.projects reversed %}
-    {% include archive-single-projects.html %}
+    {% include archive-single.html %}
   {% endfor %}</ul>
 
 
