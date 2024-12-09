@@ -3,7 +3,7 @@ title: "Algorithm Survey"
 collection: projects
 type: "Undergraduate project"
 permalink: /projects/Algorithm_Survey_VE477
-venue: "University 1, Department"
+venue: "SJTU-UM JI, ECE Department"
 date: 2024-12-01
 location: "Shanghai, China"
 ---
