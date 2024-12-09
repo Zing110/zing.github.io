@@ -14,8 +14,6 @@ I am very fortunate to be advised by [Prof. Youyi Bi](https://sites.ji.sjtu.edu.
 You can find my CV here: [Zeqing's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
 [Email](der-zing@sjtu.edu.cn) / [Github](https://github.com/Zing110) 
-<<<<<<< HEAD
-=======
 
 (I am currently updating this website.)
->>>>>>> cf3bace8b26d4f8bce546d019f1fc805fc9df720
+
