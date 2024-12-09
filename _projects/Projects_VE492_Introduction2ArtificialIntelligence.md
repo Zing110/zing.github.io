@@ -33,4 +33,4 @@ Solving BinaryCSPs efficiently often involves techniques such as backtracking, c
 
 The doc for how the requirement of the implementation is [Project explination](../assets/code/VE492/p2/p2.pdf).
 
-The code files can be found [here](../assets/code/VE492/p2/p2)
+The code files can be found [here](https://github.com/Zing110/VE492/tree/main/p2/p2)
