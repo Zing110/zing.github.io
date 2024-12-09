@@ -4,7 +4,7 @@ collection: projects
 type: "Undergraduate project"
 permalink: /projects/BinaryCSP
 venue: "SJTU-UM JI, ECE Department"
-date: 2024-06-01
+date: 2024-08-01
 location: "Shanghai, China"
 ---
 
