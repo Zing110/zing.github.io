@@ -56,6 +56,6 @@ The RL process typically follows these steps:
 
 ### Implementation:
 
-The doc for how the requirement of the implementation is [Project explination](../assets/code/VE492/p4/p4.pdf).
+The doc of the requirement for the implementation is [Project explination](../assets/code/VE492/p4/p4.pdf).
 
 The code files can be found [here](https://github.com/Zing110/VE492/tree/main/p4/P4)
