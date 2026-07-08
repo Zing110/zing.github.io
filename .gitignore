@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# 原始材料(简历/报告等,含隐私,不入库)
+_source/
