@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Chat from '../components/Chat.tsx';
+
+const title = '对话 - 个人主页';
+const description = '与了解我的 AI 助手对话';
+---
+
+<Layout title={title} description={description}>
+  <section class="container pt-32 pb-20">
+    <h1 class="text-4xl font-bold mb-2 fade-in-up">
+      与我对话<span class="gradient-text">.</span>
+    </h1>
+    <p class="text-zinc-500 mb-10 fade-in-up">
+      这是一个了解我的 AI 助手,可以问我关于研究、项目、经历的问题。
+    </p>
+
+    <Chat client:load />
+  </section>
+</Layout>

@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="个人主页">
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center pt-16">
+    <div class="container text-center fade-in-up">
+      <p class="text-sm text-zinc-500 mb-6 tracking-widest uppercase">
+        Researcher · Engineer
+      </p>
+
+      <h1 class="text-5xl sm:text-7xl font-bold mb-6 tracking-tight">
+        <span class="gradient-text">你的名字</span>
+      </h1>
+
+      <p class="text-xl sm:text-2xl text-zinc-400 mb-4 max-w-2xl mx-auto">
+        研究方向 / 一句话定位
+      </p>
+
+      <p class="text-base text-zinc-500 mb-10 max-w-xl mx-auto">
+        这里放一段简短的自我介绍,描述你的研究兴趣和职业目标。
+      </p>
+
+      <div class="flex items-center justify-center gap-4">
+        <a
+          href={`${import.meta.env.BASE_URL}about`}
+          class="px-6 py-3 rounded-full text-sm font-medium transition-all"
+          style="background: linear-gradient(135deg, var(--accent-start), var(--accent-end)); color: white;"
+        >
+          了解更多
+        </a>
+        <a
+          href={`${import.meta.env.BASE_URL}chat`}
+          class="px-6 py-3 rounded-full text-sm font-medium glass hover:border-white/20 transition-all"
+        >
+          与 AI 对话 →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 简要亮点 -->
+  <section class="container py-20 border-t border-white/10">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="text-3xl font-bold gradient-text mb-2">N+</div>
+        <p class="text-sm text-zinc-500">发表论文</p>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl font-bold gradient-text mb-2">N+</div>
+        <p class="text-sm text-zinc-500">研究项目</p>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl font-bold gradient-text mb-2">N</div>
+        <p class="text-sm text-zinc-500">年研究经验</p>
+      </div>
+    </div>
+  </section>
+</Layout>
