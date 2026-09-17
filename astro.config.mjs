@@ -3,8 +3,6 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
-import react from '@astrojs/react';
-
 // https://astro.build/config
 export default defineConfig({
   // 项目仓库部署: URL 为 https://zing110.github.io/zing.github.io/
@@ -16,5 +14,4 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  integrations: [react()]
 });

@@ -1,26 +1,96 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import NebulaHero from '../components/NebulaHero.tsx';
 ---
 
-<Layout title="个人主页">
-  <!-- 星云交互 Hero -->
-  <NebulaHero client:load />
+<Layout>
+  <section class="hero container" aria-labelledby="intro-title">
+    <div class="hero-kicker"><span></span> Academic profile · Research & engineering</div>
+    <div class="hero-grid">
+      <div>
+        <h1 id="intro-title">Zeqing<br /><em>Wang</em></h1>
+      </div>
+      <div class="hero-intro">
+        <p class="hero-lead">I build research prototypes at the intersection of visual computing, 3D representation, and intelligent systems.</p>
+        <p class="hero-copy">My work turns experimental ideas into inspectable, reproducible software. I am especially interested in motion understanding, geometry, and the tools that connect research with real-world use.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View selected work</a>
+          <a class="button button-quiet" href="https://github.com/Zing110" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-meta" aria-label="Current focus">
+      <div><span>Focus</span><strong>Visual computing & 3D</strong></div>
+      <div><span>Practice</span><strong>Research software</strong></div>
+      <div><span>Based online</span><strong>GitHub / Zing110</strong></div>
+    </div>
+  </section>
 
-  <!-- 简要亮点 -->
-  <section class="container py-20 border-t border-white/10">
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
-      <div class="text-center">
-        <div class="text-3xl font-bold gradient-text mb-2">N+</div>
-        <p class="text-sm text-zinc-500">发表论文</p>
+  <section id="research" class="section section-tinted">
+    <div class="container split-heading">
+      <div>
+        <p class="eyebrow">01 / Research</p>
+        <h2>Questions before<br />answers.</h2>
       </div>
-      <div class="text-center">
-        <div class="text-3xl font-bold gradient-text mb-2">N+</div>
-        <p class="text-sm text-zinc-500">研究项目</p>
+      <div class="research-list">
+        <article>
+          <span>01</span>
+          <div><h3>Motion understanding</h3><p>Tracking, correspondence, and representations that preserve how a scene changes over time.</p></div>
+        </article>
+        <article>
+          <span>02</span>
+          <div><h3>3D representation</h3><p>Geometry-aware analysis and visualization for dynamic meshes, deformation, and spatial data.</p></div>
+        </article>
+        <article>
+          <span>03</span>
+          <div><h3>Research systems</h3><p>Readable pipelines and practical tooling that make experiments easier to reproduce and extend.</p></div>
+        </article>
       </div>
-      <div class="text-center">
-        <div class="text-3xl font-bold gradient-text mb-2">N</div>
-        <p class="text-sm text-zinc-500">年研究经验</p>
+    </div>
+  </section>
+
+  <section id="work" class="section container">
+    <div class="section-heading">
+      <div><p class="eyebrow">02 / Selected work</p><h2>Research, made tangible.</h2></div>
+      <p>A small selection of public work. Project details and publication material will be added as they become ready for release.</p>
+    </div>
+
+    <div class="work-grid">
+      <a class="work-card work-card-featured" href="https://github.com/Zing110/TADF" target="_blank" rel="noopener noreferrer">
+        <div class="work-number">01</div>
+        <div class="work-visual" aria-hidden="true">
+          <svg viewBox="0 0 520 260" role="img">
+            <path d="M54 195 C126 66, 188 215, 266 82 S410 178, 474 55" />
+            <path class="secondary" d="M40 152 C128 225, 202 42, 290 174 S412 82, 480 145" />
+            <g><circle cx="54" cy="195" r="8"/><circle cx="151" cy="125" r="8"/><circle cx="266" cy="82" r="8"/><circle cx="372" cy="121" r="8"/><circle cx="474" cy="55" r="8"/></g>
+          </svg>
+        </div>
+        <div class="work-content">
+          <p class="work-type">Computer vision · 3D geometry</p>
+          <h3>TADF</h3>
+          <p>A research pipeline for generating motion tracks from video and visualizing displacement across 3D mesh sequences.</p>
+          <span class="text-link">Explore repository ↗</span>
+        </div>
+      </a>
+
+      <a class="work-card" href="https://github.com/Zing110?tab=repositories" target="_blank" rel="noopener noreferrer">
+        <div class="work-number">02</div>
+        <div class="work-content">
+          <p class="work-type">Open source · Software</p>
+          <h3>Code archive</h3>
+          <p>Public experiments, course work, and software projects across Python, Rust, and the web.</p>
+          <span class="text-link">Browse all repositories ↗</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section closing-section">
+    <div class="container closing-grid">
+      <p class="eyebrow">03 / Connect</p>
+      <div>
+        <h2>Interested in the same questions?</h2>
+        <p>I welcome thoughtful conversations about research, engineering, and open-source collaboration.</p>
+        <a class="button button-primary" href="https://github.com/Zing110" target="_blank" rel="noopener noreferrer">Connect on GitHub ↗</a>
       </div>
     </div>
   </section>

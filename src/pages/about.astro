@@ -2,25 +2,31 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="关于 - 个人主页" description="个人简介、教育背景与研究方向">
-  <section class="container pt-32 pb-20">
-    <h1 class="text-4xl font-bold mb-8 fade-in-up">
-      关于<span class="gradient-text">.</span>
-    </h1>
+<Layout title="About — Zeqing Wang" description="About Zeqing Wang's research interests and approach to research engineering.">
+  <section class="about-hero container">
+    <p class="eyebrow">About</p>
+    <h1>Research should be<br /><em>clear enough to build on.</em></h1>
+  </section>
 
-    <div class="max-w-2xl text-zinc-400 space-y-4 fade-in-up">
-      <p>
-        这里写个人简介。一段话说明你是谁、研究什么、目标是什么。
-      </p>
-      <p>
-        内容待填充——先把页面结构和样式跑通,文案后续补。
-      </p>
-    </div>
-
-    <!-- 教育时间线占位 -->
-    <div class="mt-16">
-      <h2 class="text-2xl font-semibold mb-6">教育背景</h2>
-      <div class="text-zinc-600 text-sm">[ 时间线组件 - 待开发 ]</div>
+  <section class="section section-tinted">
+    <div class="container about-grid">
+      <aside>
+        <p class="portrait-monogram" aria-label="Zeqing Wang initials">ZW</p>
+        <dl>
+          <div><dt>Research</dt><dd>Visual computing<br />3D representation<br />Intelligent systems</dd></div>
+          <div><dt>Engineering</dt><dd>Python · Rust · Web</dd></div>
+          <div><dt>Online</dt><dd><a href="https://github.com/Zing110" target="_blank" rel="noopener noreferrer">github.com/Zing110 ↗</a></dd></div>
+        </dl>
+      </aside>
+      <div class="prose">
+        <p class="lead">I am Zeqing Wang, a researcher and engineer interested in how computational systems perceive motion, represent geometry, and turn complex visual data into useful structure.</p>
+        <p>My preferred way of working sits between research and implementation: formulate a precise question, build the smallest system that can test it, and make the result legible to the next person. That means I care about experimental rigor as much as code quality and reproducibility.</p>
+        <p>This site is a living index of that work. A fuller academic record, including education, publications, and a downloadable CV, will be added once the material is ready for public release.</p>
+        <div class="note-block">
+          <span>Current note</span>
+          <p>Open-source project details are available now on GitHub; additional academic material is being prepared.</p>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>

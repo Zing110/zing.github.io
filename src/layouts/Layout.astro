@@ -9,18 +9,22 @@ interface Props {
 }
 
 const {
-  title = '个人主页',
-  description = '个人主页 - 展示研究经历、项目成果',
+  title = 'Zeqing Wang — Research & Engineering',
+  description = 'Academic homepage of Zeqing Wang, featuring research interests, selected work, and open-source projects.',
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
     <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#f4f1ea" />
+    <link rel="canonical" href={canonicalURL} />
 
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -29,14 +33,7 @@ const {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-
-    <!-- 字体 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <meta property="og:url" content={canonicalURL} />
   </head>
   <body>
     <Navbar />
