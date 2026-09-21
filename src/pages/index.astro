@@ -110,21 +110,20 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </article>
 
-        <article class="research-item">
-          <aside class="research-meta">
-            <time>Oct 2023 – Jun 2024</time>
-            <p>DDDIS Lab, SJTU</p>
-            <p>Advisor: Youyi Bi</p>
+        <article class="research-item research-item--publication">
+          <aside class="publication-preview">
+            <span class="venue-tag">RCIM 2025</span>
+            <a class="research-visual" href="https://doi.org/10.1016/j.rcim.2025.103012" target="_blank" rel="noopener noreferrer" aria-label="Open the safe motion planning paper">
+              <img src={`${import.meta.env.BASE_URL}images/safe-motion-overview.png`} alt="Co-evolution framework for safe industrial human-robot interaction" loading="lazy" decoding="async" />
+            </a>
           </aside>
           <div class="research-body">
-            <h3>Towards safe motion planning for industrial human-robot interaction: A co-evolution approach based on human digital twin and mixed reality</h3>
-            <p>Built a human digital-twin simulation in Unity and ML-Agents and trained A-IPPO for safe collaborative motion planning.</p>
-            <ul>
-              <li>Validated collision detection and multi-stage reward design in simulated and physical collaboration tasks.</li>
-              <li>Achieved 90.5–95.5% success with 3.1–6.3% collision rates and reduced collisions by 70.7% versus PPO on pick-and-place.</li>
-            </ul>
-            <p class="research-citation">B. Feng, <strong>Zeqing Wang</strong>, L. Yuan, Q. Zhou, Y. Chen, and Y. Bi. “Towards safe motion planning for industrial human-robot interaction: A co-evolution approach based on human digital twin and mixed reality.” <em>Robotics and Computer-Integrated Manufacturing</em>, 95:103012, 2025.</p>
-            <p class="research-links"><a href="https://doi.org/10.1016/j.rcim.2025.103012" target="_blank" rel="noopener noreferrer">paper</a><span>/</span><a href="https://github.com/bohanfeng/Towards-Safe-Motion-Planning-for-Industrial-Human-Robot-Interaction" target="_blank" rel="noopener noreferrer">code</a><span>/</span><a href="https://www.youtube.com/watch?v=iZl7r_tehIk" target="_blank" rel="noopener noreferrer">video</a></p>
+            <h3 class="publication-title"><a href="https://doi.org/10.1016/j.rcim.2025.103012" target="_blank" rel="noopener noreferrer">Towards safe motion planning for industrial human-robot interaction: A co-evolution approach based on human digital twin and mixed reality</a></h3>
+            <p class="publication-authors">Bohan Feng, <strong>Zeqing Wang</strong>, Lianjie Yuan, Qi Zhou, Yulin Chen, and Youyi Bi</p>
+            <p class="publication-venue"><em>Robotics and Computer-Integrated Manufacturing, 95:103012, 2025</em></p>
+            <p class="research-links publication-links"><a href="https://doi.org/10.1016/j.rcim.2025.103012" target="_blank" rel="noopener noreferrer">paper</a><span>/</span><a href="https://github.com/bohanfeng/Towards-Safe-Motion-Planning-for-Industrial-Human-Robot-Interaction" target="_blank" rel="noopener noreferrer">code</a><span>/</span><a href="https://www.youtube.com/watch?v=iZl7r_tehIk" target="_blank" rel="noopener noreferrer">video</a></p>
+            <p class="publication-summary">We develop a co-evolution framework that combines human digital twins, mixed reality, and deep reinforcement learning for safe industrial human-robot interaction. The system achieves 90.5–95.5% task success with 3.1–6.3% collision rates and reduces pick-and-place collisions by 70.7% relative to PPO.</p>
+            <p class="publication-context">DDDIS Lab, SJTU · Advisor: Youyi Bi · Oct 2023 – Jun 2024</p>
           </div>
         </article>
       </div>
