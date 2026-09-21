@@ -5,7 +5,9 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
   <div class="page-shell">
     <section class="profile" aria-labelledby="profile-name">
-      <div class="portrait" aria-label="Zeqing Wang initials">ZW</div>
+      <div class="portrait">
+        <img src={`${import.meta.env.BASE_URL}images/profile-pixel.png`} alt="Pixel-art portrait of Zeqing Wang" />
+      </div>
 
       <div class="profile-copy">
         <h1 id="profile-name">Zeqing Wang</h1>
