@@ -95,7 +95,6 @@ import Layout from '../layouts/Layout.astro';
 
         <article class="research-item research-item--publication">
           <aside class="publication-preview">
-            <span class="venue-tag">IROS 2025</span>
             <a class="research-visual" href={`${import.meta.env.BASE_URL}tadf/`} aria-label="Open the TADF project page">
               <img src={`${import.meta.env.BASE_URL}images/tadf-overview.gif`} alt="Input surgical video and the corresponding animated 3D deformation field" loading="lazy" decoding="async" />
             </a>
@@ -103,7 +102,7 @@ import Layout from '../layouts/Layout.astro';
           <div class="research-body">
             <h3 class="publication-title"><a href={`${import.meta.env.BASE_URL}tadf/`}>Tracking-Aware Deformation Field Estimation for Non-rigid 3D Reconstruction in Robotic Surgeries</a></h3>
             <p class="publication-authors"><strong>Zeqing Wang</strong>, Han Fang, Yihong Xu, and Yutong Ban</p>
-            <p class="publication-venue"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025</em></p>
+            <p class="publication-venue"><span class="venue-tag">IROS 2025</span><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025</em></p>
             <p class="research-links publication-links"><a href="https://arxiv.org/abs/2503.02558" target="_blank" rel="noopener noreferrer">paper</a><span>/</span><a href={`${import.meta.env.BASE_URL}tadf/`}>project page</a><span>/</span><a href="https://github.com/Zing110/TADF" target="_blank" rel="noopener noreferrer">code</a></p>
             <p class="publication-summary">We propose TADF, a tracking-aware neural reconstruction method that uses CoTracker-derived soft-tissue trajectories to jointly estimate tissue geometry and deformation. It reduces average deformation MSE from 0.322 to 0.288 and improves average PSNR from 30.978 to 32.043 dB.</p>
             <p class="publication-context">SIRIUS Lab, SJTU · Advisor: Yutong Ban · Mar 2024 – Feb 2025</p>
@@ -112,7 +111,6 @@ import Layout from '../layouts/Layout.astro';
 
         <article class="research-item research-item--publication">
           <aside class="publication-preview">
-            <span class="venue-tag">RCIM 2025</span>
             <a class="research-visual" href="https://doi.org/10.1016/j.rcim.2025.103012" target="_blank" rel="noopener noreferrer" aria-label="Open the safe motion planning paper">
               <img src={`${import.meta.env.BASE_URL}images/safe-motion-overview.png`} alt="Co-evolution framework for safe industrial human-robot interaction" loading="lazy" decoding="async" />
             </a>
@@ -120,7 +118,7 @@ import Layout from '../layouts/Layout.astro';
           <div class="research-body">
             <h3 class="publication-title"><a href="https://doi.org/10.1016/j.rcim.2025.103012" target="_blank" rel="noopener noreferrer">Towards safe motion planning for industrial human-robot interaction: A co-evolution approach based on human digital twin and mixed reality</a></h3>
             <p class="publication-authors">Bohan Feng, <strong>Zeqing Wang</strong>, Lianjie Yuan, Qi Zhou, Yulin Chen, and Youyi Bi</p>
-            <p class="publication-venue"><em>Robotics and Computer-Integrated Manufacturing, 95:103012, 2025</em></p>
+            <p class="publication-venue"><span class="venue-tag">RCIM 2025</span><em>Robotics and Computer-Integrated Manufacturing, 95:103012, 2025</em></p>
             <p class="research-links publication-links"><a href="https://doi.org/10.1016/j.rcim.2025.103012" target="_blank" rel="noopener noreferrer">paper</a><span>/</span><a href="https://github.com/bohanfeng/Towards-Safe-Motion-Planning-for-Industrial-Human-Robot-Interaction" target="_blank" rel="noopener noreferrer">code</a><span>/</span><a href="https://www.youtube.com/watch?v=iZl7r_tehIk" target="_blank" rel="noopener noreferrer">video</a></p>
             <p class="publication-summary">We develop a co-evolution framework that combines human digital twins, mixed reality, and deep reinforcement learning for safe industrial human-robot interaction. The system achieves 90.5–95.5% task success with 3.1–6.3% collision rates and reduces pick-and-place collisions by 70.7% relative to PPO.</p>
             <p class="publication-context">DDDIS Lab, SJTU · Advisor: Youyi Bi · Oct 2023 – Jun 2024</p>
