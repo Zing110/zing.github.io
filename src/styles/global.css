@@ -162,6 +162,20 @@ h1, h2, h3 {
 
 .research-meta p { margin-bottom: 5px; }
 
+.research-visual {
+  display: block;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.research-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .research-body h3,
 .project-item h3,
 .education-list h3,
@@ -307,6 +321,7 @@ h1, h2, h3 {
   }
 
   .research-meta { margin-bottom: 10px; }
+  .research-visual { max-width: 360px; }
   .misc-grid { grid-template-columns: 1fr; gap: 26px; }
 }
 
