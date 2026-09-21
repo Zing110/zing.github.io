@@ -6,11 +6,11 @@ The site is a static academic profile built with Astro and hosted entirely on Gi
 
 ## Content still to add
 
-- Verified affiliation and education history
-- Publication list with canonical links
+- Professional portrait
+- Canonical paper and project-page links
 - Downloadable CV
 - Preferred public contact address
-- Two or three additional research or engineering case studies
+- Images, demos, or videos for selected research projects
 
 Keep private drafts and source documents in `_source/`; that directory is ignored by Git and is never included in the deployed site.
 

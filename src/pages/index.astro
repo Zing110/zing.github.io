@@ -9,12 +9,19 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="profile-copy">
         <h1 id="profile-name">Zeqing Wang</h1>
-        <p>I am a researcher and engineer interested in computer vision, machine learning, and intelligent systems.</p>
-        <p>My work explores how visual representations and foundation models can support useful, clear, and reproducible research systems.</p>
+        <p>
+          I am an M.S. student in Computer Science (Artificial Intelligence) at the
+          University of Southern California. I received my bachelor's degree in Electronic
+          and Computer Engineering from Shanghai Jiao Tong University.
+        </p>
+        <p>
+          My research spans robot learning, world models, uncertainty quantification,
+          3D vision and reconstruction, and human–robot interaction.
+        </p>
         <p class="profile-links">
           <a href="https://github.com/Zing110" target="_blank" rel="noopener noreferrer">GitHub</a>
           <span>/</span>
-          <a href="https://github.com/Zing110?tab=repositories" target="_blank" rel="noopener noreferrer">Repositories</a>
+          <a href="https://www.linkedin.com/in/zeqing-wang-477405374/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <span>/</span>
           <a href={`${import.meta.env.BASE_URL}about/`}>About</a>
         </p>
@@ -33,9 +40,9 @@ import Layout from '../layouts/Layout.astro';
           and other agents.
         </p>
         <div class="research-pillars">
-          <p><strong>Perceive &amp; Ground</strong><span>Multimodal sensing, 3D understanding, and world models.</span></p>
-          <p><strong>Reason &amp; Remember</strong><span>Foundation models, planning, tool use, and persistent memory.</span></p>
-          <p><strong>Plan &amp; Act</strong><span>Vision-language-action policies, skill learning, and adaptive control.</span></p>
+          <p><strong>Perceive &amp; Ground</strong><span>Multimodal sensing, 3D vision, reconstruction, and grounded world models.</span></p>
+          <p><strong>Reason &amp; Remember</strong><span>Foundation models, planning, uncertainty quantification, and persistent memory.</span></p>
+          <p><strong>Plan &amp; Act</strong><span>Robot learning, vision-language-action policies, and adaptive control.</span></p>
           <p><strong>Interact &amp; Collaborate</strong><span>Human–robot interaction and coordination among multiple agents.</span></p>
         </div>
       </div>
@@ -44,44 +51,127 @@ import Layout from '../layouts/Layout.astro';
     <section class="content-section" aria-labelledby="news-title">
       <h2 id="news-title">News</h2>
       <ul class="news-list">
-        <li><time datetime="2026-09">Sep 2026</time><span>This academic homepage is now live on GitHub Pages.</span></li>
+        <li><time datetime="2026-09">Sep 2026</time><span>Began research on uncertainty-aware policy evaluation with robotic world models at USC's SLURM Lab.</span></li>
+        <li><time datetime="2025">2025</time><span>First-author paper on tracking-aware non-rigid 3D reconstruction published at IROS 2025.</span></li>
+        <li><time datetime="2025">2025</time><span>Co-authored work on safe human–robot motion planning published in <em>Robotics and Computer-Integrated Manufacturing</em>.</span></li>
+        <li><time datetime="2025-05">May 2025</time><span>Selected as a Shanghai Outstanding Graduate.</span></li>
       </ul>
     </section>
 
-    <section class="content-section" aria-labelledby="work-title">
-      <h2 id="work-title">Research</h2>
-      <article class="research-entry">
-        <div class="research-figure" aria-hidden="true">
-          <svg viewBox="0 0 260 150" role="img">
-            <path d="M18 112 C53 49, 88 125, 126 59 S205 102, 241 32" />
-            <path class="secondary" d="M17 83 C59 123, 99 26, 145 97 S211 45, 243 81" />
-            <circle cx="18" cy="112" r="4" />
-            <circle cx="89" cy="92" r="4" />
-            <circle cx="126" cy="59" r="4" />
-            <circle cx="190" cy="77" r="4" />
-            <circle cx="241" cy="32" r="4" />
-          </svg>
-        </div>
-        <div class="research-copy">
-          <h3><a href="https://github.com/Zing110/TADF" target="_blank" rel="noopener noreferrer">TADF</a></h3>
-          <p class="research-context">Research project · Computer vision and 3D geometry</p>
-          <p>A pipeline for generating motion tracks from video and visualizing displacement across 3D mesh sequences.</p>
-          <p class="research-output"><strong>Output:</strong> Open-source research software</p>
-          <p class="research-links">
-            <a href="https://github.com/Zing110/TADF" target="_blank" rel="noopener noreferrer">project page</a>
-            <span>/</span>
-            <a href="https://github.com/Zing110/TADF" target="_blank" rel="noopener noreferrer">code</a>
-          </p>
-        </div>
-      </article>
+    <section class="content-section" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <div class="research-list">
+        <article class="research-item">
+          <aside class="research-meta">
+            <time>Sep 2026 – Present</time>
+            <p>SLURM Lab, USC</p>
+            <p>Advisors: Daniel Seita &amp; Yue Wang</p>
+          </aside>
+          <div class="research-body">
+            <h3>Uncertainty Estimation for Policy Evaluation with Robotic World Models</h3>
+            <p>Investigating when world-model rollouts can reliably replace costly real-robot policy evaluations.</p>
+            <ul>
+              <li>Building a CTRL-World evaluation pipeline on the DROID Franka platform across in- and out-of-distribution tasks.</li>
+              <li>Studying ensemble uncertainty, predictive disagreement, classifiers, and calibration for reliable policy ranking.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="research-item">
+          <aside class="research-meta">
+            <time>Dec 2025 – Apr 2026</time>
+            <p>HaRVI Lab, USC</p>
+            <p>Advisor: Heather Culbertson</p>
+          </aside>
+          <div class="research-body">
+            <h3>Fast VR Scene Reconstruction and Haptic Mapping with 3D Gaussian Splatting</h3>
+            <p>Designed an end-to-end workflow combining 3DGS reconstruction, semantic understanding, and haptic mapping to generate interactive VR environments in under one hour.</p>
+            <ul>
+              <li>Developed automatic scene cropping and artifact removal to preserve relevant geometry.</li>
+              <li>Integrated Splat Feature Solver to map semantic objects to vibrotactile effects.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="research-item">
+          <aside class="research-meta">
+            <time>Mar 2024 – Feb 2025</time>
+            <p>SIRIUS Lab, SJTU</p>
+            <p>Advisor: Yutong Ban</p>
+          </aside>
+          <div class="research-body">
+            <h3>Tracking-Aware Non-Rigid 3D Reconstruction for Robotic Surgery</h3>
+            <p>Proposed TADF, incorporating CoTracker-based soft-tissue trajectories into a neural implicit reconstruction network.</p>
+            <ul>
+              <li>Jointly reconstructed tissue geometry and deformation with a color-coded deformation-field visualization system.</li>
+              <li>Reduced average deformation MSE from 0.322 to 0.288 and improved average PSNR from 30.978 to 32.043 dB.</li>
+            </ul>
+            <p class="research-citation"><strong>Zeqing Wang</strong>, H. Fang, Y. Xu, and Y. Ban. “Tracking-Aware Deformation Field Estimation for Non-rigid 3D Reconstruction in Robotic Surgeries.” <em>IEEE/RSJ IROS</em>, 2025.</p>
+            <p class="research-links"><a href="https://github.com/Zing110/TADF" target="_blank" rel="noopener noreferrer">project page</a><span>/</span><a href="https://github.com/Zing110/TADF" target="_blank" rel="noopener noreferrer">code</a></p>
+          </div>
+        </article>
+
+        <article class="research-item">
+          <aside class="research-meta">
+            <time>Oct 2023 – Jun 2024</time>
+            <p>DDDIS Lab, SJTU</p>
+            <p>Advisor: Youyi Bi</p>
+          </aside>
+          <div class="research-body">
+            <h3>Safe Human–Robot Collaborative Motion Planning with Digital Twins and RL</h3>
+            <p>Built a human digital-twin simulation in Unity and ML-Agents and trained A-IPPO for safe collaborative motion planning.</p>
+            <ul>
+              <li>Validated collision detection and multi-stage reward design in simulated and physical collaboration tasks.</li>
+              <li>Achieved 90.5–95.5% success with 3.1–6.3% collision rates and reduced collisions by 70.7% versus PPO on pick-and-place.</li>
+            </ul>
+            <p class="research-citation">B. Feng, <strong>Zeqing Wang</strong>, L. Yuan, Q. Zhou, Y. Chen, and Y. Bi. “Towards Safe Motion Planning for Industrial Human-Robot Interaction.” <em>Robotics and Computer-Integrated Manufacturing</em>, 95:103012, 2025.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="content-section" aria-labelledby="projects-title">
       <h2 id="projects-title">Selected Projects</h2>
-      <div class="simple-entry">
-        <h3><a href="https://github.com/Zing110?tab=repositories" target="_blank" rel="noopener noreferrer">Additional projects</a></h3>
-        <p>Course projects, personal builds, and open-source software across Python, Rust, and the web.</p>
+      <article class="project-item">
+        <p class="project-meta">Course project · CSCI 544, USC · Sep–Dec 2025</p>
+        <h3>Medical Question Answering via LoRA Fine-Tuning and Multi-Agent Collaboration</h3>
+        <p>Fine-tuned Llama-3.1-8B and Qwen3-8B on MedMCQA and PubMedQA, then designed a Triage–Expert–Consultation framework for structured clinical reasoning.</p>
+        <p><strong>Result:</strong> 79.03% accuracy on MedMCQA and a BERTScore F1 of 0.8473 for explanation quality.</p>
+      </article>
+      <p class="archive-link"><a href="https://github.com/Zing110?tab=repositories" target="_blank" rel="noopener noreferrer">Browse additional projects on GitHub →</a></p>
+    </section>
+
+    <section class="content-section" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="education-list">
+        <article><div><h3>University of Southern California</h3><p>M.S. in Computer Science (Artificial Intelligence)</p></div><time>2025 – 2027</time></article>
+        <article><div><h3>Shanghai Jiao Tong University</h3><p>B.Eng. in Electronic and Computer Engineering</p></div><time>2021 – 2025</time></article>
       </div>
+    </section>
+
+    <section class="content-section misc-grid" aria-label="Additional academic information">
+      <div>
+        <h2>Honors</h2>
+        <ul class="plain-list">
+          <li><span>Shanghai Outstanding Graduate</span><time>2025</time></li>
+          <li><span>Gold Award, SJTU Undergraduate Capstone Project</span><time>2024</time></li>
+          <li><span>Wu Jiong–Sun Jie Sunshine Scholarship</span><time>2024</time></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Leadership</h2>
+        <div class="leadership-entry">
+          <h3>President &amp; Founder, JI XR Club</h3>
+          <p class="project-meta">2023 – 2024</p>
+          <p>Organized AR/VR development workshops and led club projects and technical initiatives in extended reality.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section toolkit" aria-labelledby="toolkit-title">
+      <h2 id="toolkit-title">Technical Toolkit</h2>
+      <p><strong>Languages:</strong> Python, C++, C#, MATLAB</p>
+      <p><strong>Frameworks &amp; tools:</strong> PyTorch, TensorFlow, scikit-learn, OpenCV, Unity, ML-Agents, Linux, Git/GitHub, 3D Gaussian Splatting</p>
     </section>
   </div>
 </Layout>
